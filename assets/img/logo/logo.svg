@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 600 600"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="logo.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/tommychu/GolandProjects/observer/website/static/assets/img/logo.png"
+   inkscape:export-xdpi="162"
+   inkscape:export-ydpi="162"
+   width="600"
+   height="600">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="0.921875"
+     inkscape:cx="37.901515"
+     inkscape:cy="216.01437"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <metadata
+     id="metadata10">image/svg+xml<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <defs
+     id="defs8" />
+  <path
+     inkscape:connector-curvature="0"
+     d="M 524.47527,280.55745 C 479.4899,204.21859 395.58912,153.19757 299.99999,153.19757 c -95.62902,0 -179.51065,51.05692 -224.475281,127.35988 a 38.295487,38.295487 0 0 0 0,38.88589 c 44.986171,76.33807 128.886151,127.35909 224.475281,127.35909 95.62902,0 179.51064,-51.05692 224.47528,-127.35988 a 38.293892,38.293892 0 0 0 0,-38.8851 z m -224.47528,127.9487 c -81.82321,0 -153.25774,-43.64261 -191.48143,-108.50615 35.2302,-59.78449 98.67438,-101.54101 172.46254,-107.71388 7.81563,8.04621 12.63617,19.01809 12.63617,31.12131 0,24.67557 -20.00342,44.679 -44.679,44.679 -24.67556,0 -44.679,-20.00343 -44.679,-44.679 l 8.1e-4,-0.0336 c -8.14355,15.22676 -12.76623,32.62045 -12.76623,51.09523 0,59.9265 48.57963,108.50613 108.50614,108.50613 59.92651,0 108.50615,-48.57963 108.50615,-108.50613 0,-24.75775 -8.29753,-47.57436 -22.25573,-65.83371 C 430.60948,227.10781 467.55342,259.39476 491.48142,300 453.25854,364.86354 381.8232,408.50615 299.99999,408.50615 Z"
+     id="path2"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.51652932;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+</svg>
+<!-- Font Awesome Free 5.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+
