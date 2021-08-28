@@ -1,4 +1,51 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.85.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Tommy Chu"><meta name=description content="The documentation of the project Observer, the mind and soul of a face tracking surveillance robot."><title>Observer Project</title><link rel=stylesheet href=./assets/fonts/SourceSansPro/stylesheet.css><link rel=stylesheet href=./assets/css/styles.css></head><body><header id=page-header><div id=page-logo-wrapper><img id=page-logo alt="Uwe Uwe Logo" src=./assets/img/logo/logo.png width=150 height=150></div><h1 id=page-title>Observer Project</h1><div id=page-short-desc>The documentation of the project Observer, the mind and soul of a face tracking surveillance robot.</div><ul id=page-platform-links class=as-icons-and-text><li><a href=https://chutommy.github.io/ title="Go to author's website"><img alt="author icon" src=./assets/img/platforms/personal.png width=36 height=36>
-<span>Author</span></a></li><li><a href=https://github.com/chutommy/observer title="Go to the Observer Github repository"><img alt="source icon" src=./assets/img/platforms/github.png width=36 height=36>
-<span>Source</span></a></li><li><a href="https://docs.google.com/document/d/19FhBe4HvJeZMuhAFcyugnGlhiUhVPWTIfCu6MOH3Rxk/edit?usp=sharing" title="Go to the project publication [cs]"><img alt="publication icon" src=./assets/img/platforms/document.png width=36 height=36>
-<span>Publication</span></a></li></ul></header><main id=page-content></main><script src=./assets/js/uwe-uwe.js type=text/javascript></script><script type=text/javascript>UWE_UWE.FOOTNOTES.init(),UWE_UWE.TABS.init()</script></body></html>
+<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.85.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Tommy Chu"><meta name=description content="The documentation of the project Observer, the mind and soul of a face tracking surveillance robot."><title>Observer Project</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-L57N702NRS"></script>S
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-L57N702NRS')</script><link rel=stylesheet href=./assets/fonts/SourceSansPro/stylesheet.css><link rel=stylesheet href=./assets/css/styles.css></head><body><header id=page-header><div id=page-logo-wrapper><img id=page-logo alt="Uwe Uwe Logo" src=./assets/img/logo/logo.png width=150 height=150></div><h1 id=page-title>Observer Project</h1><div id=page-short-desc>The documentation of the project Observer, the mind and soul of a face tracking surveillance robot.</div><ul id=page-platform-links class=as-icons-and-text><li><a href=https://chutommy.github.io/ title="Go to author's website" target=_blank><img alt="author icon" src=./assets/img/platforms/personal.png width=36 height=36>
+<span>Author</span></a></li><li><a href=https://github.com/chutommy/observer title="Go to the Observer Github repository" target=_blank><img alt="source icon" src=./assets/img/platforms/github.png width=36 height=36>
+<span>Source</span></a></li><li><a href="https://docs.google.com/document/d/19FhBe4HvJeZMuhAFcyugnGlhiUhVPWTIfCu6MOH3Rxk/edit?usp=sharing" title="Go to the project publication [cs]" target=_blank><img alt="publication icon" src=./assets/img/platforms/document.png width=36 height=36>
+<span>Publication</span></a></li></ul></header><nav id=page-toc><h2>Table of Contents</h2><ul><li><a href=#main>Main</a></li></ul></nav><main id=page-content><h2 id=about>About</h2><p>The Observer is a software for a face recognition and face tracking devices. The
+application is able to fully and reliably control the movement of the camera
+using two servomotors in any direction. The real-time recognition algorithm is
+provided by the optimized computer vision library OpenCV.</p><p>The entire software was developed with a performance in mind and all decisions
+were made to be perfectly compatible with low-end PCs (aiming to be runnable on
+minicomputers like Raspberry Pis).</p><h2 id=dependencies>Dependencies</h2><p>The observer uses these technologies to run properly:</p><ul><li><span class=link-wrapper><a href=https://golang.org/dl/ target=_blank>Go v1.14</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></li><li><span class=link-wrapper><a href=https://gobot.io/ target=_blank>Gobot v1.14.0</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></li><li><span class=link-wrapper><a href=https://gocv.io/ target=_blank>GoCV v0.23.0</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></li><li><span class=link-wrapper><a href=https://opencv.org/ target=_blank>OpenCV v4.3.0</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></li><li><span class=link-wrapper><a href=https://github.com/opencv/opencv/ target=_blank>HaarCascade</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></li></ul><h2 id=installation>Installation</h2><p>Tested on Raspberry Pi 3 Model B+:</p><p><em>With <code>go</code>, <code>opencv4</code>, <code>gocv</code> and <code>gobot</code> installed, run this command to install
+executable file into your <strong>PATH</strong>:</em></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ go get github.com/chutommy/observer-rpi
+</code></pre></div><p><strong>OR</strong></p><p>Download the source and run the <code>install.sh</code> file as a sudo user in the project
+root directory to install all dependencies and the Observer software (can take
+up to 15 minutes).</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ sudo ./install
+</code></pre></div><h3 id=post-install-steps>Post-install steps</h3><p>Type <code>./observer -h</code> or <code>--help</code> in a terminal to get more info about the
+observer command.</p><h2 id=project-publication>Project publication</h2><p>The document which explains the goals of the Observer project. Everything
+including the original inspiration and motive is thoroughly described and
+discussed. All the questions/answers and critical decisions that were made
+during the development process are included and analyzed as well.</p><p>The document also communicates my personal struggles, mistakes and doubts caused
+by lack of knowledge, poor design choices and low budget for hardware
+components. However, all obstacles and inaccuracies had been overcome and the
+project was successfully finished.</p><p><strong>Czech
+version:</strong>
+<span class=link-wrapper><a href="https://docs.google.com/document/d/19FhBe4HvJeZMuhAFcyugnGlhiUhVPWTIfCu6MOH3Rxk/edit?usp=sharing" target=_blank>Dozorce - CS</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span></p><h2 id=gallery>Gallery</h2><p><strong>Full gallery:</strong>
+<em>See all photos and videos captured throughout the growth and development
+process of the Observer project in
+the
+<span class=link-wrapper><a href=https://github.com/chutommy/observer/tree/master/docs target=_blank>docs/</a>
+<img src=./assets/img/icons/external-link-icon.svg height=12 width=12></span>
+folder.</em></p><h3 id=samples>Samples</h3><p><img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/project/gifs/1.gif alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/project/gifs/2.gif alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/project/gifs/3.gif alt></p><h3 id=skelet>Skelet</h3><h4 id=scheme>Scheme</h4><p><img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/schema/00.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/schema/02.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/schema/03.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/schema/07.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/schema/09.jpg alt></p><h4 id=construction>Construction</h4><p><img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/construction/01.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/construction/09.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/construction/11.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/skelet/construction/13.jpg alt></p><h3 id=cover>Cover</h3><p><img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/cover/construction/01.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/cover/construction/04.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/cover/construction/09.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/cover/construction/11.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/cover/construction/12.jpg alt></p><h3 id=result>Result</h3><p><img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/result/images/00.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/result/images/01.jpg alt>
+<img src=https://raw.githubusercontent.com/chutommy/observer/master/docs/result/images/02.jpg alt></p></main><script src=./assets/js/uwe-uwe.js type=text/javascript></script><script type=text/javascript>UWE_UWE.FOOTNOTES.init(),UWE_UWE.TABS.init()</script></body></html>
